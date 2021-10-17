@@ -33,6 +33,30 @@
   font-family: 'Source Sans Pro', sans-serif;  
 }
 
+/* For Box area*/
+/* https://www.codingnepalweb.com/tic-tac-toe-game-javascript/ 
+Some starter code, might want to use a 2-d array in js*/
+.play-area{
+  margin-top: 20px;
+}
+.play-area section{
+  display: flex;
+  margin-bottom: 1px;
+}
+.play-area section span{
+  display: block;
+  height: 90px;
+  width: 90px;
+  margin: 2px;
+  color: #56baed;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
