@@ -53,9 +53,16 @@ const data = [
 
 
 // export 
-export default function App() {
+// export default function App() {
+//   return (
+    
+//   );
+// }
+
+
+function App() {
   return (
-    <LineChart
+    <><LineChart
       width={500}
       height={300}
       data={data}
@@ -63,7 +70,7 @@ export default function App() {
         top: 10,
         right: 0,
         left: 0,
-        bottom: 0
+        bottom: 10
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
@@ -75,33 +82,27 @@ export default function App() {
         type="monotone"
         dataKey="Rabbits"
         stroke="#8884d8"
-        activeDot={{ r: 8 }}
-      />
+        activeDot={{ r: 8 }} />
       <Line type="monotone" dataKey="Wolves" stroke="#82ca9d" />
     </LineChart>
+    
+    <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div></>
   );
 }
 
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
+export default App;
