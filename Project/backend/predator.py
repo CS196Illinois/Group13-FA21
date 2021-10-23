@@ -1,36 +1,31 @@
 from distance import usefulFunctions
 import random
 
-class prey:
-    def __intit__(self, species, Energy, energyToBreed, energyToRun, runSpeed, canavsSizeX, canavsSizeY):
+class predator:
+    def __intit__(self, species, Energy, energyToBreed, energyToRun, travelSpeed):
         self.species = species
         self.Energy = energy
         self.energyToBreed = energyToBreed
         self.energyToRun = energyToRun
-        self.runSpeed = runSpeed
-        litterSize = 24
+        self.travelSpeed = travelSpeed
+        litterSize = 3
         positionX = random.randint(canavsSizeX)
         positionY = random.randint(canavsSizeY)
-        vision = 1
+        vision = 2
 
     def move(speed, time):
         distance = speed * time
-        energy -= 1
+        positionX += distance
         
     def run(speed , time):
         if (energy > 0):
             distance = speed *2 *time
-            energy -= 3
+            energy -= 1
+            positionX += distance
         else:
             distance = move(speed, time)
-
-    
-    def energyUpdate(grassConsumed):
-        energy += (grassConsumed*3)
-    
-    
-    
-    
-
-
+            positionX += distance
         
+    def energyUpdate(preyConsumed):
+        energy += (preyConsumed*5)
+
