@@ -1,8 +1,8 @@
-from distance import usefulFunctions
+from distance import utilFunctions
 import random
 
-class predator:
-    def __intit__(self, species, Energy, energyToBreed, energyToRun, travelSpeed):
+class Predator:
+    def __init__(self, species, Energy, energyToBreed, energyToRun, travelSpeed, canavsSizeX, canavsSizeY):
         self.species = species
         self.Energy = energy
         self.energyToBreed = energyToBreed
@@ -16,11 +16,12 @@ class predator:
     def move(speed, time):
         distance = speed * time
         positionX += distance
+        energy -= 1
         
     def run(speed , time):
         if (energy > 0):
             distance = speed *2 *time
-            energy -= 1
+            energy -= 4
             positionX += distance
         else:
             distance = move(speed, time)

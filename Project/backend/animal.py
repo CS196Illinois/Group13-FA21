@@ -5,14 +5,14 @@ from prey import prey
 def main:
     turn = 0;
     currentProgram = program(predatorT, preyR, Tpopulation, Rpopulation)
-    allpredators = predator[]
-    allpreys = prey[]
-    for i in range(0,program.predatorPopulation, 1): 
+    allpredators = []
+    allpreys = []
+    for i in range(program.predatorPopulation): 
         allpredators.append(program.predator)
-    for i in range(0,program.preyPopulation, 1)
+    for i in range(program.preyPopulation):
         allpreys.append(program.prey)
     
-    for i in range(0,program.predatorPopulation, 1)
+    for i in range(program.predatorPopulation):
         for t in allpredators:
             t.move()
 

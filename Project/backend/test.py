@@ -1,23 +1,23 @@
 from prey import prey
-from predator import predator
-from prey import prey
+from predator import Predator
+from prey import Prey
 
-class program:
-    def __intit__(self, sPredator, sPrey, pPopulation, prPopulation):
-        self.prey = prey
-        self.predator = predator
+class Program:
+    def __init__(self, sPredator, sPrey, pPopulation, prPopulation):
+        self.prey = Prey prey
+        self.predator = Predator predator
         self.predatorPopulation = pPopulation
         self.preyPopulation = prPopulation
     
         
     def preyPopulate(prey):
         if(prey.energyToBreed > prey.energy):
-            program.preyPopulation += prey.litterSize
+            preyPopulation += prey.litterSize
             prey.energy -= prey.energyToBreed
     
     def predatorPopulate(predator):
         if(predator.energyToBreed > predator.energy):
-            program.predatorPopulation += predator.litterSize
+            predatorPopulation += predator.litterSize
             predator.energy -= predator.energyToBreed
 
     
