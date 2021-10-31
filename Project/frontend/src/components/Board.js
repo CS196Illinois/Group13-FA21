@@ -12,6 +12,14 @@ animals[1][2] = 3
 animals[11][4] = 4
 animals[12][6] = 5
 
+animals[0][7] = 1
+animals[3][3] = 2
+animals[6][13] = 3
+animals[18][17] = 4
+animals[8][1] = 5
+
+
+
 export default function board() {
     let board = [];
     for(let j = verticalaxis - 1; j >= 0; j--) {

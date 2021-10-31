@@ -73,8 +73,10 @@ function Graph() {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" stroke="white"/>
-      <YAxis stroke="white"/>
+      <XAxis dataKey="name" stroke="white" style={{
+        fontSize: '1rem', }}/>
+      <YAxis stroke="white" style={{
+        fontSize: '1rem', }}/>
       <Tooltip />
       <Legend />
       <Line
