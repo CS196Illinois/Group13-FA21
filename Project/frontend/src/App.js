@@ -6,6 +6,7 @@ import './App.css';
 import Board from './components/Board';
 import SliderPredator from './components/SliderPredator';
 import SliderPrey from './components/SliderPrey';
+import Graph from './components/Graph';
 
 
 const App = () => {
@@ -50,7 +51,8 @@ const App = () => {
           linearGradientColor="#e8137a"
           rangeBackgroundColor="#d7dcdf"
           sliderThumbColor="#e8137a"
-        />        
+        />
+      <Graph/>        
     </div>    
   );  
 }

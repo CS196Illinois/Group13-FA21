@@ -3,7 +3,7 @@
 #app {
   display: grid;
   place-content: center;
-  height: 100vh;
+  height: 225vh;
 
   min-height: 150vh;
   display: flex;
