@@ -1,6 +1,43 @@
 /* Code for Board */
+/* and app components */
 #app {
   display: grid;
   place-content: center;
   height: 100vh;
+
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+
+  
 }
+
+
+button:hover{
+  background-color:orange;
+  transition: background-color 0.5s ease-in;
+}
+
+button:focus{
+  background-color:red;
+}
+
+.button {
+  background-color: #001aff;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc(10px + 2vmin);
+  margin: 20px 2px;
+}
+
+
+.buttonstart {border-radius: 12px;}
