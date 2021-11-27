@@ -1,6 +1,6 @@
 
    
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './App.css';
 import Board from './components/Board';
@@ -8,8 +8,20 @@ import SliderPredator from './components/SliderPredator';
 import SliderPrey from './components/SliderPrey';
 import Graph from './components/Graph';
 
+// was
+//const App = () => {  .... for the funciton app
 
-const App = () => {
+
+function App() {
+
+  const [initialData, setInitialData] = useState([{}])
+
+  useEffect(()=> {
+    fetch('/test').then(
+      response => response.json()
+    ).then(data => console.log(data))
+  });
+
   // for prey
   const [rangeValue, setRangeValue] = useState(10);
 
@@ -25,7 +37,9 @@ const App = () => {
   }
 
   return (
+
     <div id="app">
+      <h1>{initialData.data}</h1>
       <Board/>
       <button class="button buttonstart">Start</button>
       <p>Prey Starting Population</p>      
