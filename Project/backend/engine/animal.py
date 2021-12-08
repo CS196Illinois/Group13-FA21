@@ -3,10 +3,10 @@ from predator import Predator
 from prey import Prey
 
 class SetUP:
-    playerOne = Predator("Lion", 100, 3, 6, 2, 1000, 1000)
+    playerOne = Predator("Lion", 100, 3, 6, 2, 20, 20)
     turn = 10
     step = 1
-    playerTwo = Prey("Rabbit", 200, 3, 6, 1, 1000, 1000)
+    playerTwo = Prey("Rabbit", 200, 3, 6, 1, 20, 20)
     onePopulation = 3
     twoPopulation = 5;
     program = Program(playerOne, playerTwo, onePopulation, twoPopulation)
