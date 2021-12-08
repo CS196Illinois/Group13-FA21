@@ -1,9 +1,9 @@
-from animal import SetUP
+from run import Run
 
 def main():
-    p = SetUP();
+    r = Run
     trash = {}
-    trash = p.predatorPosition();
+    trash = r.dataPrey;
     print(trash);
 
 main()

@@ -7,7 +7,7 @@ class Predator:
         self.energy = Energy
         self.energyToBreed = energyToBreed
         self.energyToRun = energyToRun
-        self.travelSpeed = travelSpeed
+        self.runSpeed = travelSpeed
         litterSize = 3
         self.positionX = random.randint(0,canavsSizeX)
         self.positionY = random.randint(0,canavsSizeY)
@@ -16,13 +16,13 @@ class Predator:
     def move(self, speed, time):
         distance = speed * time
         self.positionX += distance
-        self.energy -= 1
+        #self.energy -= 1
         
-    def run(self, speed, time):
-        distance = speed *2 *time
-        energy -= 4
-        self.positionX += distance
+    # def run(self, speed, time):
+    #     distance = speed *2 *time
+    #     energy -= 4
+    #     self.positionX += distance
         
-    def energyUpdate(self, preyConsumed):
-        self.energy += (preyConsumed*5)
+    # def energyUpdate(self, preyConsumed):
+    #     self.energy += (preyConsumed*5)
 
