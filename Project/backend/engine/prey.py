@@ -9,25 +9,25 @@ class Prey:
         self.energyToRun = energyToRun
         self.runSpeed = runSpeed
         litterSize = 24
-        positionX = random.randint(0,canavsSizeX)
-        positionY = random.randint(0,canavsSizeY)
+        self.positionX = random.randint(0,canavsSizeX)
+        self.positionY = random.randint(0,canavsSizeY)
         vision = 1
 
-    def move(speed, time):
+    def move(self, speed, time):
         distance = speed * time
-        positionX += distance
-        energy -= 1
+        self.positionX += distance
         
-    def run(speed , time):
-        if (energy > 0):
-            distance = speed *2 *time
-            positionX += distance
-            energy -= 3
-        else:
-            distance = move(speed, time)
-            positionX += distance
+        
+    # def run(self, speed , time):
+    #     if (energy > 0):
+    #         distance = speed *2 *time
+    #         self.positionX += distance
+    #         self.energy -= 3
+    #     else:
+    #         distance = move(speed, time)
+    #         self.positionX += distance
 
     
-    def energyUpdate(grassConsumed):
-        energy += (grassConsumed*3)
+    # def energyUpdate(grassConsumed):
+    #     self.energy += (grassConsumed*3)
     
